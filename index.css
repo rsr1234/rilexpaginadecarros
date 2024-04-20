@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(16, 16, 16);
+}
+
+body {
+    font-family: 'courier new', 'Ping fang', 'Zapfino';
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.0em;
+}
+
+h2 {
+    font-size: 2.6em;
+}
+
+p {
+    font-size: 1.8em;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(10, 10, 10);
+}
+
+header .logo {
+    color: gold;
+    font-family: 'zapfino';
+    padding: 25px 30px;
+    margin: 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-right: 20px;
+}
+
+header a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 12px;
+    color: aliceblue;
+}
+
+header a:hover {
+    color: rgb(255, 190, 26);
+    text-shadow: 2px 2px 5px rgb(252, 255, 200);
+}
+
+#navegador {
+    background-color: rgb(10, 10, 10);
+    padding: 30px;
+    margin: 0;
+}
+
+#navegador .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navegador nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#navegador a {
+    text-decoration: none;
+    color: rgb(160, 120, 18);
+    font-size: 2.0em;
+    font-weight: bold;
+}
+
+#navegador a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 10px rgb(255, 241, 133);
+}
+
+#nosotros {
+    background-color: #050017;
+    height: 100vh;
+}
+
+#nosotros .container {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 50px;
+    align-items: center;
+}
+
+#nosotros .img-container {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.137)), url("media/rlogo.png");
+    background-size: cover;
+    background-position: center center;
+    height: 320px;
+    width: 320px;
+    border-radius: 15px;
+}
+
+#nosotros .texto {
+    width: 50%;
+    text-align: initial;
+    padding-left: 30px;
+    color: rgb(195, 212, 247);
+}
+
+#vision {
+    display: flex;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/fondo1.jpeg");
+    background-image: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    height: 100vh;
+}
+
+#vision .container {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px;
+    padding-left: 100px;
+}
+
+#vision h1 {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 4em;
+    animation: brillo 4s infinite;
+}
+
+#vision .texto {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px;
+    padding-right: 50px;
+}
+
+#vision p {
+    border-radius: 7px;
+    border-radius: 2px solid rgb(255, 255, 255);
+    opacity: 50%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    background-color: #78787880;
+    align-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: bold;
+}
+
+#presencia {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#presencia h2 {
+    margin-top: 0;
+}
+
+#presencia p {
+    display: none;
+}
+
+footer {
+    background-color: rgb(16, 16, 16);
+    align-content: end;
+}
+
+footer p {
+    margin: 0;
+    color: rgb(150, 150, 150);
+    font-size: 1em;
+}
+
+@keyframes brillo{
+    0%{
+        text-shadow: 0 0 20px rgb(255, 255, 255);
+    }
+    50%{
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.202);
+    }
+    100%{
+        text-shadow: 0 0 20px rgb(255, 255, 255);
+    }
+}
